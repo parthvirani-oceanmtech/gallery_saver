@@ -75,8 +75,7 @@ class GallerySaver {
     return result;
   }
 
-  static Future<File> _downloadFile(String url,
-      {Map<String, String>? headers}) async {
+  static Future<File> _downloadFile(String url, {Map<String, String>? headers}) async {
     print(url);
     print(headers);
     http.Client _client = new http.Client();
